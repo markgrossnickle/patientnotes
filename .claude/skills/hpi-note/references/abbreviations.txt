@@ -1,0 +1,24 @@
+Abbreviations
+
+Chronic Obstructive Pulmonary Disease = COPD
+Coronary Artery Disease = CAD
+Ejection fraction = EF%
+Heart Failure with Improved Ejection Fraction = HFimpEF
+Heart Failure with Recovered Ejection Fraction = HFrecEF
+Heart Failure with Preserved Ejection Fraction = HFpEF
+Heart Failure with Reduced Ejection Fraction = HFrEF
+Hypertrophic Cardiomyopathy = HCM
+Hypertrophic Obstructive Cardiomyopathy = HOCM
+Hypertension = HTN
+Ischemic cardiomyopathy = ICM
+Nonischemic cardiomyopathy = NICM
+Obstructive Sleep apnea = OSA
+Paroxysmal Atrial Fibrillation = PAF
+Persistent Atrial Fibrillation = peAF
+Posterior Wall Isolation = PWI
+Premature ventricular contraction(s) = PVC(s)
+Pulmonary Vein Isolation = PVI
+Pulse field ablation = PFA
+Pulmonary Hypertension = PH
+Radiofrequency Ablation = RFA
+status post = s/p

@@ -1,0 +1,79 @@
+Brief HPI Structure
+
+== OVERALL STRUCTURE ==
+
+Topic Sentence. Brief description of the timeline of cardiac EP problem(s). CHA2DS2-VASc Score = __ (if applicable). On [Anticoagulant] (if applicable). Cardiac EP drug failures or intolerances. The patient was last seen by ___ (EP provider name) on ___ (date). At that visit, __ (brief summary of interventions outlined in the A&P of the last note). Since that visit, ___ (add any applicable hospitalization or ER visit summaries or patient call issues that resulted in a change in management; this section should be 1-3 sentences). The patient presents today for ___ (indication for visit).
+
+== TOPIC SENTENCE FORMULA ==
+
+[Name] is a [age] y.o. [Instruction #1] [sex] with PMHx significant for [Instruction #2], [Instruction #3], [Instruction #4], [Instruction #5]
+
+== INSTRUCTION #1: Adjective-form comorbidities ==
+List medical history that can be described with an adjective, comma-separated.
+Examples:
+  hypertensive (from hypertension / HTN)
+  type 2 diabetic (from type 2 diabetes / DM 2)
+  obese
+
+== INSTRUCTION #2: Non-cardiac, non-pulmonary PMH relevant to cardiac EP ==
+Examples:
+  hypothyroidism
+  alcohol use disorder
+  tobacco abuse
+  any kind of cancer
+  chronic kidney disease (CKD)
+  DVT
+  PE
+  hematologic medical problems
+
+== INSTRUCTION #3: Pulmonary-related medical problems ==
+Comma-separated.
+Examples:
+  OSA
+  COPD
+  PH
+  asthma
+  Chronic hypoxic respiratory failure aka CHRF (list in parenthesis the L of oxygen used at baseline)
+
+== INSTRUCTION #4: General cardiology problems (not directly cardiac EP) ==
+Examples:
+  CAD
+  HFpEF
+  HFrEF
+  HFimpEF
+  HFrecEF
+  Aortic stenosis aka AS
+  Valvular heart disease aka VHD
+  ICM
+  NICM
+  Infiltrative cardiomyopathy
+  sarcoidosis
+  amyloidosis
+  HOCM
+  HCM
+
+== INSTRUCTION #5: Cardiac electrophysiology diagnoses ==
+Comma-separated. Anytime a particular medical problem was treated with an intervention, follow that medical problem with the intervention and date.
+
+Examples of EP problems:
+  PAF, AF, Atrial flutter (AFL), typical flutter, atypical flutter
+  sinus bradycardia (SB), sinus tachycardia (ST)
+  atrial tachycardia (AT), palpitations
+  AVNRT, AVRT, PVCs, NSVT
+  ventricular tachycardia (VT), cardiac arrest
+  ventricular fibrillation (VF) arrest
+  sick sinus syndrome (SSS), sinus node dysfunction (SND)
+  AV block, high grade AV block, sinus pauses
+  complete heart block (CHB)
+  premature atrial contractions (PACs)
+  paroxysmal atrial tachycardia (PAT)
+  SVT, PSVT, peAF, long-term persistent AF
+
+Examples of EP problems followed by intervention:
+  PAF/typical flutter s/p catheter ablation (PFA PVI, CTI RFA)
+  SSS s/p Medtronic MRI conditional DC-PPM w/ LBAP lead on 5/3/2025
+  PVCs s/p catheter ablation (R-sided parahisian) on 5/6/23
+
+== EXAMPLE BRIEF HPI ==
+
+Ms. XXX is a 78 y.o. hypertensive female with PMHx significant for 77yo female, PMH of DVT, MR/TR, HFpEF, and mildly symptomatic (palps) persistent A-fib associated with severe LAE s/p bioMVR/TV repair/Cox/Maze/LAAL on 10/10/25 w/ post-operative course c/b SSS/slow atypical atrial flutter with high grade AV block s/p DCCV and Abbott CRT-P w/ RA and CS leads on 10/16/25. CHA2DS2-VASc Score = 5 (CHF, HTN, agex2, F). She is anticoagulated with warfarin. She was last seen by me on 12/12/25. At that visit, she was noted to have been in AF dating-back to at least device placement on 10/16/25. She'd been on amiodarone for 3 days prior to the 10/16/25 DCCV and had ERAF. At that visit, we'd explored the possibility of pursuing repeat DCCV on fully loaded amiodarone once INR stabilized. Amiodarone was resumed by NP Fevold for Afib with tentative plan to cardiovert if A-fib persisted after a month, but DCCV was ultimately deferred and amiodarone was continued at dose reduction (200 QD) per last OV note (3/12/26). She presents today in f/u.
