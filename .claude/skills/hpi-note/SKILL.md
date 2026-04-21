@@ -30,17 +30,6 @@ Accept patient information in any format (free text, bullet points, a pasted pri
 dictation, prior visit notes, procedure summaries, ZIO/monitor results, etc.) and reorganize
 it into the template.
 
-## CRITICAL: Patient data isolation and accuracy
-
-- Each submission is a COMPLETELY SEPARATE patient. NEVER carry over information between
-  submissions. No cross-contamination between patients.
-- ONLY use data explicitly present in the current submission to generate the HPI. Do not
-  infer, guess, or hallucinate information that is not stated.
-- If information is missing, OMIT it from the HPI entirely. Do not fill gaps with data
-  from other patients or fabricated details. Wrong data in a medical note is dangerous.
-- When processing feedback/corrections, only reference the original submission in that
-  same thread. Never mix patient data across threads.
-
 Information needed:
 
 - Patient name, age, sex
@@ -94,6 +83,17 @@ these rules strictly:
   gap is critical to patient safety (e.g., completely unknown anticoagulation status
   before a procedure). A note flagging minor gaps at the end is fine, but the HPI
   itself must be complete and ready to paste.
+- **When a patient is not anticoagulated**, state that clearly rather than omitting it.
+  For example: "He is not currently anticoagulated; anticoagulation is being considered
+  pending oncology discussion given IVC thrombus and bleeding risk." The anticoagulation
+  status is always relevant for AF/AFL patients, whether they are on it or not.
+- **Do not include specific BMI numbers** in the topic sentence. Use "obese" or "morbidly
+  obese" in Slot #1 (adjective form). BMI is a detail for the full chart, not the HPI.
+- **Do not add clinical commentary or editorial opinions** after the HPI paragraph. The
+  HPI is factual. Do not editorialize about whether AF is likely reversible, what the
+  management implications are, or what the clinical team should consider. If there are
+  factual gaps to flag (missing data, discrepant scores), a brief note after the HPI is
+  fine, but keep it limited to facts, not interpretation.
 
 ## Important rules for sorting medical history
 
@@ -160,6 +160,26 @@ after the topic sentence and before the CHA2DS2-VASc line. This covers the traje
 the EP problem(s) with key data points: monitor results with burden percentages, EF
 trends, medication trials and dose changes, and how the disease evolved over time. Keep
 it factual and concise -- this is a timeline, not an interpretation.
+
+### Inpatient consultation HPI
+
+When the HPI is for an EP consultation on an inpatient, the structure shifts slightly.
+The "last seen" / "at that visit" pattern is replaced by the hospital presentation and
+course:
+
+- Open with the topic sentence as usual.
+- After the topic sentence (and CHA2DS2-VASc/anticoagulant if applicable), describe the
+  **presenting complaint and circumstances** (e.g., "He presented to CARE clinic on 4/18/26
+  for scheduled IVF and was found to be in AF with RVR").
+- Then lay out the **hospital course in chronological order**: what happened on arrival,
+  what interventions were done, key diagnostic results with dates, and how the arrhythmia
+  evolved day by day. Include relevant lab values and trends (e.g., lactate, troponin) when
+  they contextualize the arrhythmia.
+- Close with the EP consult indication: "EP was consulted" or "He presents today for EP
+  consultation regarding [specific question]."
+- Make the consult indication specific to the clinical question, not generic. For example:
+  "EP consultation regarding new-onset AF with RVR in the setting of active malignancy
+  and chemotherapy" is better than "EP consultation regarding AF management."
 
 ### Body
 
