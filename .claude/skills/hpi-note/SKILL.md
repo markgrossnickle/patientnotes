@@ -176,25 +176,38 @@ not "hypertension" within the PMH list, write "s/p" not "status post", write "PA
 The one exception: in Slot #1 (adjective-form comorbidities), use the adjective word form
 (e.g., "hypertensive") since these are descriptors, not diagnoses.
 
-## Handling procedures as the "last seen" encounter
+## Handling "last seen" encounters
 
-When the most recent EP encounter was a procedure (not an office visit), reference the
-prior office visit as "last seen" for the A&P discussion context, then describe the
-procedure separately with its date and outcome. For example: "He was last seen by Dr. X
-on [office visit date]. At that visit, [discussion/plan]. On [procedure date], he underwent
-[procedure details]."
+"Last seen" always refers to the most recent EP encounter, whether that was an office
+visit, a hospital consult, or a procedure. Use whichever is most recent.
+
+- If the user's own note is the most recent encounter, use "me" as the provider and
+  the date of that note.
+- If the most recent EP encounter was a procedure (not an office visit), reference the
+  prior office visit as "last seen" for the A&P discussion context, then describe the
+  procedure separately with its date and outcome. For example: "He was last seen by Dr. X
+  on [office visit date]. At that visit, [discussion/plan]. On [procedure date], he underwent
+  [procedure details]."
+- Never skip past the user's own recent visit to reference an older visit from a
+  different provider. If the user provides their own OV note from 4/7/26 and an older
+  note from 9/21/23, the "last seen" is 4/7/26.
 
 ## Pre-procedure Brief HPI variant
 
 When the user asks for a "pre-procedure H&P" or "pre-sedation HPI" (for DCCV, ablation,
 loop recorder implant, device implant, etc.), produce a shorter, more focused version:
 
-- The topic sentence follows the same slot structure.
+- The topic sentence follows the same slot structure (this stays complete -- do not
+  abbreviate the topic sentence or omit PMH).
 - The EP timeline can be abbreviated -- focus on what's directly relevant to the procedure
   being performed rather than the full chronological history.
 - The body is trimmed: include CHA2DS2-VASc, anticoagulant, last visit (brief), and the
-  procedure indication. Skip lengthy interim event narratives unless they directly affect
-  the procedure (e.g., subtherapeutic INRs requiring TEE before DCCV).
+  procedure indication.
+- **Exclude from pre-procedure notes:** device interrogation details (battery, lead
+  parameters, pacing percentages), ECG findings (QRS, QTc, intervals), detailed visit
+  summaries, and lengthy interim event narratives -- unless they directly affect the
+  procedure (e.g., subtherapeutic INRs requiring TEE before DCCV, or amiodarone loading
+  status for a post-load DCCV).
 - The visit indication should state the specific procedure: "She presents today for DCCV"
   or "He presents today for TEE/DCCV" or "She presents today for loop recorder implant."
 - If the DCCV is planned as a bridge to a future ablation, state that: "presents today
@@ -247,4 +260,4 @@ Mr. ___ is a 59 y.o. hypertensive male with PMHx significant for moderate TR, an
 
 ### Example 5: Pre-procedure TEE/DCCV (complex congenital, bridge to ablation)
 
-Ms. ___ is a 34 y.o. female with PMHx significant for Shone's syndrome with congenital aortic coarctation s/p repair via left subclavian flap (causing growth restriction of LUE) and subaortic membrane resection with myectomy 1991, s/p Kono aortoventriculoplasty 1993 c/b CHB due to enlargement of LVOT, s/p mechanical AVR and MVR 1998, HFrEF (LVEF 45% per echo 11/2022), Medtronic CRT-P in situ (s/p epicardial PPM at time of Kono procedure, transitioned to endocardial device 2006, c/b lead malfunction 10/2022 with RA lead no sensing/capture and noise on RV lead, s/p full system extraction and implant of CRT-P 10/10/2022), frequent PVCs (LRL increased to 70 bpm in 8/2023 with improvement), atypical AFL s/p ablation 9/2022, and persistent AF/AFL since 12/2025. She is anticoagulated with warfarin (goal INR 2.5-3.5 for mechanical valves), with subtherapeutic INRs noted. She was last seen by me on 4/7/26. Catheter ablation is planned for long-term rhythm control. She presents today for TEE/DCCV as bridge to ablation.
+Ms. ___ is a 34 y.o. female with PMHx significant for Shone's syndrome with congenital aortic coarctation s/p repair via left subclavian flap (causing growth restriction of LUE) and subaortic membrane resection with myectomy 1991, s/p Kono aortoventriculoplasty 1993 c/b CHB due to enlargement of LVOT, s/p mechanical AVR and MVR 1998, HFrEF (LVEF 45% per echo 11/2022), Medtronic CRT-P in situ (s/p epicardial PPM at time of Kono procedure, transitioned to endocardial device 2006, c/b lead malfunction 10/2022 with RA lead no sensing/capture and noise on RV lead, s/p full system extraction and implant of CRT-P 10/10/2022), frequent PVCs (LRL increased to 70 bpm in 8/2023 with improvement), atypical AFL s/p ablation 9/2022, and persistent AF/AFL since 12/2025. CHA2DS2-VASc Score = 2 (CHF, F). She is anticoagulated with warfarin (goal INR 2.5-3.5 for mechanical valves), with subtherapeutic INRs noted. She was last seen by me on 4/7/26. Catheter ablation is planned for long-term rhythm control. She presents today for TEE/DCCV as bridge to ablation.
