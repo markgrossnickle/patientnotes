@@ -161,6 +161,16 @@ the EP problem(s) with key data points: monitor results with burden percentages,
 trends, medication trials and dose changes, and how the disease evolved over time. Keep
 it factual and concise -- this is a timeline, not an interpretation.
 
+**Do not repeat information already stated in the topic sentence.** If an ablation, device
+implant, or procedure is described in Slot #5, do not restate it in the timeline narrative.
+The timeline should only add NEW information that extends beyond what the topic sentence
+covers (e.g., post-procedure ZIO results, medication changes after the procedure, new
+findings). If there is no additional timeline beyond what's in the topic sentence, skip
+this section entirely.
+
+**Contextualize post-procedure diagnostics** with timing relative to the procedure (e.g.,
+"ZIO monitor (1/14/26, approximately 7 weeks post-ablation) showed...").
+
 ### Inpatient consultation HPI
 
 When the HPI is for an EP consultation on an inpatient, the structure shifts slightly.
@@ -183,19 +193,37 @@ course:
 
 ### Body
 
-After the topic sentence, continue the paragraph with:
+After the topic sentence (and EP timeline if applicable), continue the paragraph in this
+order. The ordering matters -- follow it precisely:
 
-1. **CHA2DS2-VASc score** (if applicable): "CHA2DS2-VASc Score = X (list components)."
-2. **Anticoagulant** (if applicable): "He/She is anticoagulated with [drug]."
-3. **EP drug failures or intolerances** (if any).
-4. **Last EP visit**: "He/She was last seen by [provider] on [date]."
-5. **Summary of last visit**: "At that visit, [brief summary of the A&P]."
-6. **Interim events** (if any): "Since that visit, [hospitalizations, ER visits, or patient
+1. **Post-procedure or post-visit diagnostic results** (if any). When diagnostics like ZIO
+   monitors, stress tests, or echos occurred AFTER the procedure listed in the topic
+   sentence but BEFORE the last office visit, place them here -- between the topic sentence
+   and the "last seen" line. Include timing relative to the procedure (e.g., "ZIO monitor
+   (1/14/26, approximately 7 weeks post-ablation) showed..."). Also note any confounders
+   that may affect interpretation (e.g., UTI during monitoring, medication weaning).
+2. **CHA2DS2-VASc score** (if applicable): "CHA2DS2-VASc Score = X (list components)."
+3. **Anticoagulant** (if applicable): "He/She is anticoagulated with [drug]."
+4. **EP drug failures or intolerances** (if any).
+5. **Last EP office visit**: "He/She was last seen by [provider] on [date]."
+6. **Summary of last visit -- complaints AND interventions**: "At that visit, [what the
+   patient reported/complained of] + [what was done about it]." This must include BOTH
+   the patient's symptoms/issues AND the management decisions/interventions. For example:
+   "At that visit, she reported persistent AT symptoms with chest fullness ~1x/day and HR
+   spikes on Fitbit with exertion. Pericardial symptoms had resolved. Metoprolol succinate
+   25mg daily was restarted, metoprolol tartrate continued PRN, olmesartan was discontinued,
+   and exercise was encouraged without restriction."
+7. **Interim events** (if any): "Since that visit, [hospitalizations, ER visits, or patient
    calls that changed management]." Keep this to 1-3 sentences.
-7. **Reason for today's visit**: "He/She presents today for [indication]."
+8. **Reason for today's visit**: "He/She presents today for [indication]."
 
 If a body element does not apply (e.g., no CHA2DS2-VASc for a patient without AF/AFL),
 skip it.
+
+**Important: "Last seen" always means the most recent OFFICE VISIT**, not a procedure date.
+If the patient had an ablation on 11/24/25 and an office visit on 1/26/26, "last seen" is
+1/26/26. The ablation is already captured in the topic sentence. Do not use the procedure
+date as the "last seen" date.
 
 ## Abbreviation rules
 
@@ -209,19 +237,26 @@ The one exception: in Slot #1 (adjective-form comorbidities), use the adjective 
 
 ## Handling "last seen" encounters
 
-"Last seen" always refers to the most recent EP encounter, whether that was an office
-visit, a hospital consult, or a procedure. Use whichever is most recent.
+"Last seen" refers to the most recent EP **office visit**, not a procedure. Procedures
+are captured in the topic sentence (Slot #5). The "last seen" line exists to summarize
+what was discussed and decided at the last office visit.
 
-- If the user's own note is the most recent encounter, use "me" as the provider and
+- If the user's own OV note is the most recent encounter, use "me" as the provider and
   the date of that note.
-- If the most recent EP encounter was a procedure (not an office visit), reference the
-  prior office visit as "last seen" for the A&P discussion context, then describe the
-  procedure separately with its date and outcome. For example: "He was last seen by Dr. X
-  on [office visit date]. At that visit, [discussion/plan]. On [procedure date], he underwent
-  [procedure details]."
+- If a procedure occurred AFTER the last office visit and BEFORE today, the procedure
+  goes in the topic sentence (Slot #5), and "last seen" still references the most recent
+  office visit. For example: if the patient had an ablation on 11/24/25 and an OV on
+  1/26/26, "last seen" is 1/26/26 -- not 11/24/25.
+- If the ONLY EP encounter in the record is a procedure with no subsequent office visit,
+  then reference the pre-procedure office visit where the decision to proceed was made as
+  "last seen," and note the procedure outcome after.
 - Never skip past the user's own recent visit to reference an older visit from a
   different provider. If the user provides their own OV note from 4/7/26 and an older
   note from 9/21/23, the "last seen" is 4/7/26.
+- The "at that visit" summary must include **both patient complaints/symptoms AND
+  management interventions** (medication changes, plans made, follow-up instructions).
+  This is not optional -- every "at that visit" should cover what the patient said AND
+  what was done about it.
 
 ## Pre-procedure Brief HPI variant
 
@@ -248,22 +283,10 @@ loop recorder implant, device implant, etc.), produce a shorter, more focused ve
 
 ## Output format
 
-Output the HPI as a single paragraph of plain text. It should be ready to paste directly
-into a medical record with zero editing.
+Output the HPI as a single paragraph of plain text. No headers, no bullet points, no
+markdown formatting. It should be ready to paste directly into a medical record.
 
-Strict formatting rules:
-- No headers, section titles, or labels (no "HPI:", "REPROCESSED:", etc.)
-- No bullet points or numbered lists
-- No markdown formatting (no bold, italics, dividers like ---)
-- No quotation marks wrapping the paragraph
-- No extra line breaks within the paragraph. One continuous block of text.
-- No trailing commentary, questions, or notes after the HPI (no "Would you like changes?",
-  no "Notes:", no "Missing information:" sections)
-- No editorial opinions or clinical recommendations
-
-When delivering via email, send ONLY the HPI paragraph. Nothing before it, nothing after
-it. The recipient should be able to copy the entire email body and paste it directly into
-the medical record.
+After outputting the HPI, ask if the user wants any changes.
 
 ## Learning from feedback
 
