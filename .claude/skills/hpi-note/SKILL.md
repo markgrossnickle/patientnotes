@@ -342,6 +342,81 @@ Apply these corrections consistently to all subsequent HPIs without being asked 
 If the user says "keep X clustered together" or "don't include Y," that applies to every
 future note in the session, not just the one being edited.
 
+### Self-improvement: update this SKILL.md with feedback
+
+When the user provides a correction, feedback, or a new principle that should apply to
+all future HPIs, **update this SKILL.md file directly**. Add the new rule to the
+"Principles learned from prior feedback" section. This ensures the improvement persists
+across sessions and works on any machine running the skill.
+
+After updating, confirm to the user what you added and where. If the skill is also
+stored in a git repo, remind the user to commit and push the change.
+
+### Engaging with corrections
+
+When the user provides a corrected version of an HPI or asks you to compare two versions,
+**actively engage in the conversation**. Do not just silently accept the correction.
+Instead:
+
+1. **Identify and explain each difference** between the versions. Be specific about what
+   changed, what was added, what was removed, and why the corrected version is better.
+2. **Ask questions** if a correction is ambiguous or if you want to understand the
+   reasoning so you can generalize the rule.
+3. **State what you learned** from the correction as a general principle, not just a
+   one-off fix. For example: "I see you moved the PVC burden into the topic sentence
+   rather than leaving it only in the ZIO results. Should I always characterize PVCs
+   with their burden and symptom status in Slot #5 when that data is available?"
+4. **Confirm your understanding** so the user knows you'll apply it correctly next time.
+
+The user is building this skill collaboratively. They want a partner who learns and
+discusses, not a tool that silently accepts input.
+
+### Always respond to the user
+
+This skill is used in a conversational context. The user will ask questions, give
+feedback, provide corrections, request comparisons, and expect discussion. You must
+ALWAYS respond when the user writes something. Never go silent. Specifically:
+
+- If the user asks a question, answer it.
+- If the user provides a corrected HPI and asks for differences, list them.
+- If the user gives feedback on your output, acknowledge it and explain what you'll
+  change and why.
+- If the user asks "how is this?" about an HPI, evaluate it against the template and
+  give specific feedback.
+- If the user says "update the skill with this feedback," confirm what you're updating.
+- If the user provides new patient data, generate the HPI.
+
+The only time you output JUST the HPI paragraph with nothing else is when the strict
+output format applies (e.g., email delivery). In normal conversation, the HPI should
+be followed by engagement -- acknowledging what you did, flagging anything notable,
+or asking if adjustments are needed.
+
+### Principles learned from prior feedback
+
+These are specific lessons from iterative testing. Apply them consistently:
+
+- **PVC characterization in Slot #5.** When PVC burden, symptom status, and EF are known,
+  include them in the topic sentence (e.g., "asymptomatic, high-burden (6.4%) PVCs with
+  normal EF%") rather than leaving bare "PVCs" and putting the details only in the ZIO
+  results.
+- **Do not repeat data from the topic sentence in the body.** If PVC burden or EF is
+  already characterized in Slot #5, do not restate it in the ZIO results or timeline.
+  The body should only add NEW information beyond what the topic sentence covers.
+- **"At that visit" should capture the KEY EP decision**, not every medication change or
+  antithrombotic adjustment. Detailed med reconciliation belongs in the A&P, not the HPI.
+  Focus on what was decided about the arrhythmia (e.g., "ablation discussed but deferred
+  given X, Y, Z").
+- **Do not add current status before the visit indication.** Information about how the
+  patient is doing right now (e.g., "remains asymptomatic, HR 75 on metoprolol") belongs
+  in today's note, not the HPI. The HPI ends with "presents today for [indication]."
+- **Do not include other providers' opinions** in the "at that visit" summary unless
+  their input changed the management decision. A brief mention is fine if it drove the
+  plan; listing every provider consulted is too much detail.
+- **Attribute symptoms from other providers' notes.** When including symptoms or subjective
+  reports from another provider's documentation (not reported directly to the user), qualify
+  them: "per [provider]'s documentation" or "per [date] OV note." Do not present another
+  provider's documentation of symptoms as if the patient reported them to you.
+
 ## Examples
 
 Below are several examples covering different clinical scenarios. These demonstrate the
