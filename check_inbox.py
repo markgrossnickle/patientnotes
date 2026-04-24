@@ -75,13 +75,15 @@ def check_inbox():
     return emails
 
 def send_reply(thread_id, message_id, to_addr, subject, body_text):
-    """Send a reply email."""
+    """Send a reply email as HTML to prevent word-wrap line breaks on copy-paste."""
     from email.mime.text import MIMEText
 
     creds = refresh_creds()
     service = build('gmail', 'v1', credentials=creds)
 
-    reply = MIMEText(body_text)
+    # Send as HTML paragraph so email clients don't insert line breaks
+    html_body = f'<p style="font-family: sans-serif; font-size: 14px; line-height: 1.5;">{body_text}</p>'
+    reply = MIMEText(html_body, 'html')
     reply['to'] = to_addr
     reply['subject'] = f'Re: {subject}' if not subject.startswith('Re:') else subject
     if message_id:
