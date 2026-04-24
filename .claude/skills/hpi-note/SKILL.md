@@ -283,10 +283,22 @@ loop recorder implant, device implant, etc.), produce a shorter, more focused ve
 
 ## Output format
 
-Output the HPI as a single paragraph of plain text. No headers, no bullet points, no
-markdown formatting. It should be ready to paste directly into a medical record.
+Output the HPI as a single paragraph of plain text. It should be ready to paste directly
+into a medical record with zero editing.
 
-After outputting the HPI, ask if the user wants any changes.
+Strict formatting rules:
+- No headers, section titles, or labels (no "HPI:", "REPROCESSED:", etc.)
+- No bullet points or numbered lists
+- No markdown formatting (no bold, italics, dividers like ---)
+- No quotation marks wrapping the paragraph
+- No extra line breaks within the paragraph. One continuous block of text.
+- No trailing commentary, questions, or notes after the HPI (no "Would you like changes?",
+  no "Notes:", no "Missing information:" sections)
+- No editorial opinions or clinical recommendations
+
+When delivering via email, send ONLY the HPI paragraph. Nothing before it, nothing after
+it. The recipient should be able to copy the entire email body and paste it directly into
+the medical record.
 
 ## Learning from feedback
 
