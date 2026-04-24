@@ -300,6 +300,33 @@ When delivering via email, send ONLY the HPI paragraph. Nothing before it, nothi
 it. The recipient should be able to copy the entire email body and paste it directly into
 the medical record.
 
+## Self-review before delivery
+
+After drafting the HPI but BEFORE outputting it, review the draft against this checklist.
+Fix any issues silently -- do not show the user your review process or mention that you
+performed a review. Just deliver the corrected version.
+
+Checklist:
+1. **No duplication.** Is any procedure, diagnosis, or intervention stated twice? If the
+   topic sentence mentions an ablation, does the timeline or body repeat it?
+2. **Correct "last seen" date.** Is it the most recent office visit, not a procedure date?
+3. **Complaints AND interventions.** Does "at that visit" include both what the patient
+   reported AND what management changes were made?
+4. **CHA2DS2-VASc included.** If the patient has AF or AFL, is the score present with
+   components listed? Is the math correct?
+5. **Anticoagulation status stated.** Whether on anticoagulation or not, is it addressed?
+6. **No placeholders.** Are there any brackets like [Name], [age], [drug]? Remove them.
+7. **Age present.** Does the topic sentence include the patient's age?
+8. **Abbreviations correct.** Are all terms from the abbreviation list using their
+   abbreviated form? Is Slot #1 using adjective form (not abbreviations)?
+9. **Slot ordering.** Are the slots in order: #1 (adjective comorbidities), #2 (non-cardiac/
+   non-pulmonary), #3 (pulmonary), #4 (general cardiology), #5 (EP diagnoses)?
+10. **No trailing commentary.** Does the output end with the HPI paragraph and nothing else?
+11. **Single paragraph.** Is it one continuous block of text with no line breaks, headers,
+    or bullet points?
+12. **Diagnostic timing.** Are post-procedure diagnostics contextualized with timing
+    relative to the procedure?
+
 ## Learning from feedback
 
 When the user corrects or adjusts an HPI you produced, treat that feedback as a rule
